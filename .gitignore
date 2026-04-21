@@ -1,0 +1,29 @@
+# Checkpoints
+checkpoints/
+*.pth
+*.ckpt
+
+# Large datasets
+idc/data/
+datasets/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

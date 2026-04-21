@@ -1,0 +1,59 @@
+cfg:
+  dataset: SyntheticWrapper
+  batch_size: 128
+  seeds: 1
+  epochs: 150
+  ae_non_gated_epochs: 5
+  ae_pretrain_epochs: 50
+  start_global_gates_training_on_epoch: 80
+  mask_percentage: 0.9
+  latent_noise_std: 0.01
+  gtcr_loss: true
+  gtcr_projection_dim: null
+  gtcr_eps: 1
+  eps: 0.1
+  use_gating: true
+  gates_hidden_dim: 13
+  encdec:
+  - 64
+  - 64
+  - 128
+  - 4
+  - 128
+  - 64
+  - 64
+  clustering_head:
+  - 4
+  - 64
+  tau: 100
+  aux_classifier:
+  - 64
+  local_gates_lambda: 1
+  global_gates_lambda: 1
+  gtcr_lambda: 0.01
+  lr:
+    pretrain: 0.001
+    clustering: 0.001
+    aux_classifier: 0.01
+  sched:
+    pretrain_min_lr: 1.0e-05
+    clustering_min_lr: 1.0e-05
+  save_seed_checkpoints: false
+  validate: true
+  trainer:
+    devices: 1
+    accelerator: cpu
+    max_epochs: 150
+    deterministic: true
+    logger: true
+    log_every_n_steps: 5
+    check_val_every_n_epoch: 10
+    enable_checkpointing: false
+    num_sanity_val_steps: 0
+  synth_num_samples: 5000
+  synth_num_features: 3
+  synth_num_clusters: 3
+  synth_num_noise_dims: 10
+  seed: 42
+  input_dim: 13
+  n_clusters: 4
