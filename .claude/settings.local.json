@@ -51,7 +51,12 @@
       "Bash(\"C:/Users/nadav/AppData/Local/Programs/Python/Python39/python.exe\" -m pip install pyreadr)",
       "Bash(\"C:/Users/nadav/AppData/Local/Programs/Python/Python39/python.exe\" -m pip install rdata --quiet)",
       "WebFetch(domain:training.galaxyproject.org)",
-      "Read(//c/Users/nadav/OneDrive/university/2nd_math_degree/data_science_seminar/**)"
+      "Read(//c/Users/nadav/OneDrive/university/2nd_math_degree/data_science_seminar/**)",
+      "Bash(git push *)",
+      "Bash(git ls-tree *)",
+      "Bash(sort -k4 -rn)",
+      "Bash(git reset *)",
+      "Bash(git restore *)"
     ]
   }
 }
