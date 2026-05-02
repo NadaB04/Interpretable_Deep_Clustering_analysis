@@ -3,9 +3,15 @@ checkpoints/
 *.pth
 *.ckpt
 
-# Large datasets
-idc/data/
-datasets/
+# Large datasets (over GitHub's 100MB limit - share via OneDrive)
+idc/data/pbmc_x.npz
+idc/data/albert_numpy.txt
+idc/data/miniboone_numpy.txt
+datasets/file7b53746cbda2.arff
+
+# Compressed datasets folder
+datasets_compressed/
+compress_datasets.py
 
 # Python cache
 __pycache__/
