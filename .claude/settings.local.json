@@ -56,7 +56,9 @@
       "Bash(git ls-tree *)",
       "Bash(sort -k4 -rn)",
       "Bash(git reset *)",
-      "Bash(git restore *)"
+      "Bash(git restore *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
